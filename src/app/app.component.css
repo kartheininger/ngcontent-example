@@ -1,0 +1,126 @@
+.ntLogo {
+  filter: invert(100%);
+  width: 100px;
+  flex: 0 0 auto;
+}
+
+header {
+  height: 100px;
+  align-items: center;
+  display: flex;
+}
+
+
+a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+}
+
+ul {
+  list-style: none;
+  position: relative;
+  text-align: left;
+  margin:0;
+}
+
+li {
+  float: left;
+}
+
+/* clear'n floats */
+ul:after {
+  clear: both;
+}
+
+ul:before,
+ul:after {
+  content: " ";
+  display: table;
+}
+
+.nav {
+  background: #2B2B2B;
+  text-align: center;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 1px #0E0E0E;
+  -webkit-box-shadow: 2px 2px 3px #888;
+  -moz-box-shadow: 2px 2px 3px #888;
+  box-shadow: 2px 2px 3px #888;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+/* prime */
+ul.primary li a {
+  display: block;
+  padding: 20px 30px;
+  border-right: 1px solid #3D3D3D;
+}
+
+ul.primary li:last-child a {
+  border-right: none;
+}
+
+ul.primary li a:hover {
+  color: #000;
+}
+
+ul.primary li a.active {
+  background: #fff;
+  color: #666;
+  text-shadow: none;
+}
+
+.wrap {
+  -webkit-box-shadow: 0 0 70px #fff;
+  -moz-box-shadow: 0 0 70px #fff;
+  box-shadow: 0 0 70px #fff;
+}
+
+.routerOutlet {
+  box-shadow: 2px 2px 0 #BEBEBE;
+  border-bottom: 1px dotted #ccc;
+  border-right: none;
+  margin: 2px 20px;
+  padding: 30px 40px;
+  color: #000;
+  background: #eeeeee;
+
+}
+
+/* subs */
+ul.sub {
+  position: absolute;
+  z-index: 200;
+  display:none;
+}
+
+ul.sub li {
+  float: none;
+  margin: 0;
+}
+
+ul.sub li a {
+  color: #000;
+}
+
+ul.sub li a:hover {
+}
+
+/* sub display*/
+ul.primary li:hover ul {
+  display: block;
+  background: #fff;
+}
+
+/* keeps the tab background white */
+ul.primary li:hover a {
+  background: #fff;
+  color: #666;
+  text-shadow: none;
+}
+
+ul.primary li:hover > a{
+  color: #000;
+}

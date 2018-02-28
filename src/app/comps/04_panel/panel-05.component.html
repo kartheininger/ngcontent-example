@@ -1,0 +1,12 @@
+Two times same ng-content? What happens?
+<div class="panel">
+  <div class="header">
+    Name: <b>{{name}}</b>
+  </div>
+  <div class="container">
+    <ng-content select=".content"></ng-content>
+  </div>
+  <div class="footer">
+    <ng-content select=".content"></ng-content>
+  </div>
+</div>

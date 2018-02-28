@@ -1,0 +1,74 @@
+<!--&lt;!&ndash;Panel 1&ndash;&gt;-->
+<!--<panel-02 avatar="assets/avatar1.png" name="Jesus Christ" >-->
+<!--<h4><b>Jesus Christ</b></h4>-->
+<!--<p>Architect & Engineer</p>-->
+<!--</panel-02>-->
+<!--&lt;!&ndash;Panel 2&ndash;&gt;-->
+<!--<panel-02 avatar="assets/avatar2.png" name="Michael Jackson" notAvailable="true">-->
+<!--<h4><b>Michael Jackson</b></h4>-->
+<!--<p>Singer & dancer</p>-->
+<!--</panel-02>-->
+<!--&lt;!&ndash;Panel 3&ndash;&gt;-->
+<!--<panel-02 avatar="assets/avatar3.png" name="Albert Einstein" notAvailable="true">-->
+<!--<h4><b>Albert Einstein</b></h4>-->
+<!--<p>Inventor & Theoretical physicist</p>-->
+<!--</panel-02>-->
+<!--&lt;!&ndash;Panel 4&ndash;&gt;-->
+<!--<panel-02 avatar="assets/avatar4.png" name="Jackie Chan">-->
+<!--<p>Figther & Comedian</p>-->
+<!--</panel-02>-->
+
+
+<!--Panel 1-->
+<panel-02 name="Jesus Christ">
+  <img src="assets/avatar1.png" alt="Avatar">
+  <p>Architect & Engineer</p>
+  <blockquote>
+    My favorite Catholic holiday is Easter. For those of you that don't know, Easter is the day we celebrate Jesus
+    rising from the grave and coming back to Earth as a rabbit that hides colored eggs.
+  </blockquote>
+</panel-02>
+<!--Panel 2-->
+<panel-02 name="Michael Jackson" [notAvailable]="true">
+  <img src="assets/avatar2.png" alt="Avatar">
+
+  <p>Singer & dancer</p>
+
+  <div style="flex:1">
+    <blockquote>
+      You're a vegetable!
+    </blockquote>
+    <br/>
+    <img src="assets/flickr.png" alt="Follow me on flickr! Go go go!!" style="width:50px">
+  </div>
+</panel-02>
+<!--Panel 3-->
+<panel-02 name="Albert Einstein" [notAvailable]="true">
+  <img src="assets/avatar3.png" alt="Avatar">
+  <p>Inventor & Theoretical physicist</p>
+  <div style="flex:1; display: flex; flex-direction: column">
+    <blockquote>
+      The only source of knowledge is experience
+    </blockquote>
+    <img src="assets/click_here.gif" alt="Wanna write me?" style="width:223px; align-self: center">
+    <a href="mailto:example@example.org">Email me!</a>
+  </div>
+</panel-02>
+<!--Panel 4-->
+<panel-02 name="Jackie Chan">
+  <p>Figther & Comedian</p>
+  <div style="flex:1">
+    <blockquote>
+      I never wanted to be the next Bruce Lee. I just wanted to be the first Jackie Chan.
+    </blockquote>
+    <br/>
+    <blockquote>
+      I’m crazy, but I’m not stupid.
+    </blockquote>
+    <br/>
+    <blockquote>
+      Don't try to be like Jackie. There is only one Jackie. Study computers instead.
+    </blockquote>
+  </div>
+  <img src="assets/avatar4.png" alt="Avatar">
+</panel-02>

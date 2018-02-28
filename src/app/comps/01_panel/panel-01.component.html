@@ -1,0 +1,16 @@
+<div class="panel">
+  <div class="header">
+    Name: <b>{{name}}</b>
+  </div>
+  <div class="container">
+    <img [src]="avatar" alt="Avatar">
+    <p>{{job}}</p>
+    <blockquote>
+      {{quote}}
+    </blockquote>
+  </div>
+  <div class="footer">available:
+    <span *ngIf="!notAvailable" class="availability">✓</span>
+    <span *ngIf="notAvailable" class="not availability">✕</span>
+  </div>
+</div>

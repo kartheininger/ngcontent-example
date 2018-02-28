@@ -1,0 +1,11 @@
+<div class="panel">
+  <div class="header">
+    Name: <b>{{name}}</b>
+  </div>
+  <div class="container">
+    <ng-content></ng-content>
+  </div>
+  <div class="footer">available:
+    <span *ngIf="!notAvailable" class="availability">✓</span>
+    <span *ngIf="notAvailable" class="not availability">✕</span>
+  </div>

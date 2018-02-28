@@ -1,0 +1,175 @@
+body {
+  background: #ccc;
+  font-family: helvetica, arial, serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.panel {
+  /* Add shadows to create the "panel" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  margin: 10px;
+  background-color: #BEBEBE;
+  display: flex;
+  flex-direction: column;
+}
+
+
+panel-01,
+panel-02,
+panel-03,
+panel-04,
+panel-05 {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+panel-01 .panel,
+panel-02 .panel,
+panel-03 .panel,
+panel-04 .panel,
+panel-05 .panel {
+  flex: 1;
+  margin: 0;
+}
+
+/* On mouse-over, add a deeper shadow */
+.panel:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the panel container */
+.container, .content {
+  padding: 2px 16px;
+  flex:1;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+
+
+.container > img, .content > img {
+  width: 10%;
+  height: 10%;
+}
+
+
+.panel .header {
+  text-align: left;
+  background-color: #0e406c;
+  padding: 20px;
+  color: white;
+}
+.panel .footer {
+  background-color: #2B2B2B;
+  padding: 5px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.panel .footer .availability {
+  font-weight: bold;
+  font-size: 22px;
+  display: flex;
+  color: green;
+}
+
+.panel .footer .availability.not {
+  color: red;
+}
+
+example {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+/* BLOCK QUOTES*/
+blockquote{
+  flex: 1 1 auto;
+  display:block;
+  background: #fff;
+  padding: 15px 20px 15px 45px;
+  margin: 0 0 0 20px;
+  position: relative;
+
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #666;
+
+  /*Box Shadow - (Optional)*/
+  -moz-box-shadow: 2px 2px 15px #ccc;
+  -webkit-box-shadow: 2px 2px 15px #ccc;
+  box-shadow: 2px 2px 15px #ccc;
+
+  /*Borders - (Optional)*/
+  border-left-style: solid;
+  border-left-width: 15px;
+  border-right-style: solid;
+  border-right-width: 2px;
+}
+
+blockquote::before{
+  content: "\201C"; /*Unicode for Left Double Quote*/
+
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: #999;
+
+  /*Positioning*/
+  position: absolute;
+  left: 10px;
+  top:5px;
+
+}
+
+blockquote::after{
+  /*Reset to make sure*/
+  content: "";
+}
+
+blockquote a{
+  text-decoration: none;
+  background: #eee;
+  cursor: pointer;
+  padding: 0 3px;
+  color: #c76c0c;
+}
+
+blockquote a:hover{
+  color: #666;
+}
+
+blockquote em{
+  font-style: italic;
+}
+
+/*Default Color Palette*/
+blockquote.default{
+  border-left-color: #656d77;
+  border-right-color: #434a53;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
